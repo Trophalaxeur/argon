@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "version": "1.30.0",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "biome": "^0.3.3",
+    "nx": "^20.0.5"
+  },
+  "devDependencies": {
+    "nx": "20.0.5"
+  }
+}
