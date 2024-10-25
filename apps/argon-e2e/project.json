@@ -1,0 +1,9 @@
+{
+  "name": "argon-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/argon-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["argon"],
+  "// targets": "to see all targets run: nx show project argon-e2e --web",
+  "targets": {}
+}

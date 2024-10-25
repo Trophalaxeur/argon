@@ -1,0 +1,9 @@
+{
+  "name": "argon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/argon",
+  "projectType": "application",
+  "tags": ["app:argon"],
+  "// targets": "to see all targets run: nx show project argon --web",
+  "targets": {}
+}
