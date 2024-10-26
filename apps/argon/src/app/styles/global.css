@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '../../../../../libs/shared/utils-ui/src/styles/global.css';
 
 html {
   -webkit-text-size-adjust: 100%;

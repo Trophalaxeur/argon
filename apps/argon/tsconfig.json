@@ -16,6 +16,9 @@
         "name": "next"
       }
     ],
+    // "paths": {
+    //   "@/*": ["apps/argon/src/app/*"]
+    // },
     "types": [
       "jest",
       "node"

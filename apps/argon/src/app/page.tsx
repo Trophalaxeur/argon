@@ -1,3 +1,5 @@
+import { Button } from "@argon/shared/ui-components";
+
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -14,7 +16,7 @@ export default function Index() {
               Welcome argon 👋
             </h1>
           </div>
-
+          <Button variant="outline">Button</Button>
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
