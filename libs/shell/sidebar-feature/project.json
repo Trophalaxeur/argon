@@ -1,0 +1,9 @@
+{
+  "name": "sidebar-feature",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shell/sidebar-feature/src",
+  "projectType": "library",
+  "tags": ["app:argon", "scope:sheel", "type:feature"],
+  "// targets": "to see all targets run: nx show project sidebar-feature --web",
+  "targets": {}
+}

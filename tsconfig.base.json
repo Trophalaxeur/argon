@@ -18,7 +18,13 @@
       "@argon/shared/ui-components": ["libs/shared/ui-components/src/index.ts"],
       "@argon/shared/ui-components/*": ["libs/shared/ui-components/src/*"],
       "@argon/shared/utils-ui": ["libs/shared/utils-ui/src/index.ts"],
-      "@argon/shared/utils-ui/*": ["libs/shared/utils-ui/src/*"]
+      "@argon/shared/utils-ui/*": ["libs/shared/utils-ui/src/*"],
+      "@argon/shell/sidebar-feature": [
+        "libs/shell/sidebar-feature/src/index.ts"
+      ],
+      "@argon/shell/sidebar-feature/server": [
+        "libs/shell/sidebar-feature/src/server.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

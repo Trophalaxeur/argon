@@ -1,4 +1,6 @@
+import { SidebarProvider, SidebarTrigger } from '@argon/shared/ui-components';
 import './styles/global.css';
+import { SidebarFeature } from '@argon/shell/sidebar-feature';
 
 export const metadata = {
   title: 'Welcome to argon',
@@ -12,7 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SidebarProvider>
+          <SidebarFeature />
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
+      </body>
     </html>
   );
 }
