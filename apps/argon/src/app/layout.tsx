@@ -1,4 +1,7 @@
-import { SidebarProvider, SidebarTrigger } from '@argon/shared/ui-components';
+import {
+  SidebarProvider,
+  SidebarTrigger,
+} from '@argon/shared-shadcn-components-ui';
 import './styles/global.css';
 import { SidebarFeature } from '@argon/shell/sidebar-feature';
 

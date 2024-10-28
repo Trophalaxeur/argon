@@ -1,4 +1,4 @@
-import { Button } from '@argon/shared/ui-components';
+import { Button } from '@argon/shared-shadcn-components-ui';
 
 export default function Index() {
   /*
