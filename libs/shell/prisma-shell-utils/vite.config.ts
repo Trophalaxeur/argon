@@ -5,7 +5,7 @@ import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../../node_modules/.vite/libs/shared/shadcn-components-ui',
+  cacheDir: '../../../node_modules/.vite/libs/shell/prisma-shell-utils',
   plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
   // Uncomment this if you are using workers.
   // worker: {
@@ -18,7 +18,7 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../../coverage/libs/shared/shadcn-components-ui',
+      reportsDirectory: '../../../coverage/libs/shell/prisma-shell-utils',
       provider: 'v8',
     },
   },

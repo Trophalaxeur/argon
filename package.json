@@ -2,7 +2,16 @@
   "name": "workspace",
   "version": "1.30.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "generate-schema": "pnpx nx run argon:generate-schema",
+    "generate-client": "pnpx nx run argon:generate-client",
+
+    "inner:argon:concat-schema": "cp $(find libs -name '*.prisma') apps/argon/prisma",
+    "inner:argon:db-push": "pnpx nx inner:argon:concat-schema && pnpx run prisma db push",
+    "inner:argon:generate-schema": "pnpx nx inner:argon:concat-schema && pnpx run prisma migrate dev",
+    "inner:argon:generate-client": "pnpx nx inner:argon:concat-schema && pnpx run prisma generate --generator client",
+    "inner:argon:deploy-schema": "pnpx run prisma deploy"
+  },
   "dependencies": {
     "@nx/workspace": "^20.0.6",
     "@radix-ui/react-dialog": "^1.1.2",

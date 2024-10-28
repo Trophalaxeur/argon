@@ -5,5 +5,37 @@
   "projectType": "application",
   "tags": ["app:argon"],
   "// targets": "to see all targets run: nx show project argon --web",
-  "targets": {}
+  "targets": {
+    
+    "generate-client": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inner:argon:generate-client"
+      }
+    },
+    "db-push": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inner:argon:db-push"
+      }
+    },
+    "create-empty-migration": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inner:argon:create-empty-migration"
+      }
+    },
+    "generate-schema": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inner:argon:generate-schema"
+      }
+    },
+    "deploy-schema": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inner:argon:deploy-schema"
+      }
+    }
+  }
 }

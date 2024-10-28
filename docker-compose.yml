@@ -1,0 +1,31 @@
+#########################################################################################
+#                             Environnement TEST                                        #
+#                                                                                       #
+#  déploie une instance du backend a partir de la dernière image docker connu (nightly) #
+#                                                                                       #
+#    - Accès frontend : http://localhost:8002/api/doc                                   #
+#                                                                                       #
+#########################################################################################
+
+version: "3"
+services:
+  db-argon:
+    image: mysql
+    volumes:
+      - ./docker_volumes/db_argon:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: argon
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_password
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      UPLOAD_LIMIT: 1G
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docker/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php

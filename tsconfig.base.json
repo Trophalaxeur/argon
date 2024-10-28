@@ -10,7 +10,10 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -21,15 +24,22 @@
       "@argon/shared-shadcn-utils-ui": [
         "libs/shared/shadcn-utils-ui/src/index.ts"
       ],
-      "@argon/shared/ui-components/*": ["libs/shared/ui-components/src/*"],
-      "@argon/shared/utils-ui/*": ["libs/shared/utils-ui/src/*"],
+      "@argon/shared/shadcn-components-ui/*": [
+        "libs/shared/shadcn-components-ui/src/*"
+      ],
+      "@argon/shared/shadcn-utils-ui/*": [
+        "libs/shared/shadcn-utils-ui/src/*"
+      ],
+      "@argon/shell-prisma-shell-utils": [
+        "libs/shell/prisma-shell-utils/src/index.ts"
+      ],
       "@argon/shell/sidebar-feature": [
         "libs/shell/sidebar-feature/src/index.ts"
-      ],
-      "@argon/shell/sidebar-feature/server": [
-        "libs/shell/sidebar-feature/src/server.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

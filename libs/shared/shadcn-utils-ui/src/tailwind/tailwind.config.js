@@ -11,7 +11,7 @@ module.exports = {
       __dirname,
       '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'
     ),
-    join(__dirname, '../../../ui-components/**/*.{js,jsx,ts,tsx}'),
+    join(__dirname, '../../../shadcn-components-ui/**/*.{js,jsx,ts,tsx}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
