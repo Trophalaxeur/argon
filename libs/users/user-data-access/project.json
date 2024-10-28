@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/users/user-data-access/src",
   "projectType": "library",
-  "tags": ["app:argon", "scope:user", "type:data-access"],
+  "tags": ["app:argon", "scope:users", "type:data-access"],
   "// targets": "to see all targets run: nx show project user-data-access --web",
   "targets": {}
 }

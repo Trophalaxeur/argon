@@ -4,8 +4,8 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
-    "config": "libs/shared/utils-ui/src/tailwind/tailwind.config.js",
-    "css": "libs/shared/utils-ui/src/styles/global.css",
+    "config": "libs/shared/shadcn-utils-ui/src/tailwind/tailwind.config.js",
+    "css": "libs/shared/shadcn-utils-ui/src/styles/global.css",
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""

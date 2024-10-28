@@ -3,7 +3,6 @@
   "version": "1.30.0",
   "license": "MIT",
   "scripts": {
-    "ls2": "ls",
     "generate-schema": "pnpm nx run argon:generate-schema",
     "generate-client": "pnpm nx run argon:generate-client",
     "inner:argon:concat-schema": "cp $(find libs -name '*.prisma') apps/argon/prisma/schema",
