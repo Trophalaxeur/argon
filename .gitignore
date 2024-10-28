@@ -9,4 +9,4 @@ node_modules
 .nx/cache
 .nx/workspace-data
 
-apps/argon/prisma/*
+apps/argon/prisma/schema/*
