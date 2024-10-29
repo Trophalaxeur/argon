@@ -1,18 +1,19 @@
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
-const { join } = require('path');
+const { join } = require('node:path');
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  // darkMode: ['class'],
   content: [
     join(
       __dirname,
-      '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'
+      '../../../../../apps/argon/{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}',
     ),
     join(__dirname, '../../../shadcn-components-ui/**/*.{js,jsx,ts,tsx}'),
-    ...createGlobPatternsForDependencies(__dirname),
+    ...createGlobPatternsForDependencies(
+      join(__dirname, '../../../../../apps/argon'),
+    ),
   ],
   theme: {
     container: {

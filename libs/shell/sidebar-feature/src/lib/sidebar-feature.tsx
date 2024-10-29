@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@argon/shared-shadcn-components-ui';
-import { BookUser, Home, PersonStanding, Search, Settings } from 'lucide-react';
+import { BookUser, Home, PersonStanding, Settings, User2 } from 'lucide-react';
 
 // Menu items.
 const items = [
@@ -30,9 +30,9 @@ const items = [
     icon: BookUser,
   },
   {
-    title: 'Search',
-    url: '#',
-    icon: Search,
+    title: 'Users',
+    url: '/users',
+    icon: User2,
   },
   {
     title: 'Settings',

@@ -24,10 +24,10 @@
       "@argon/shared-shadcn-utils-ui": [
         "libs/shared/shadcn-utils-ui/src/index.ts"
       ],
-      "@argon/shared/shadcn-components-ui/*": [
+      "@argon/shared-shadcn-components-ui/*": [
         "libs/shared/shadcn-components-ui/src/*"
       ],
-      "@argon/shared/shadcn-utils-ui/*": [
+      "@argon/shared-shadcn-utils-ui/*": [
         "libs/shared/shadcn-utils-ui/src/*"
       ],
       "@argon/shell-prisma-shell-utils": [
