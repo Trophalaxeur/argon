@@ -10,7 +10,7 @@ module.exports = {
       __dirname,
       '../../../../../apps/argon/{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}',
     ),
-    join(__dirname, '../../../shadcn-components-ui/**/*.{js,jsx,ts,tsx}'),
+    join(__dirname, '../../../../**/*!(*.stories|*.spec).{ts,tsx,html}'),
     ...createGlobPatternsForDependencies(
       join(__dirname, '../../../../../apps/argon'),
     ),

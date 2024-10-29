@@ -1,0 +1,9 @@
+{
+  "name": "login-form-feature",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shell/login-form-feature/src",
+  "projectType": "library",
+  "tags": ["app:argon", "scope:shell", "type:feature"],
+  "// targets": "to see all targets run: nx show project login-form-feature --web",
+  "targets": {}
+}

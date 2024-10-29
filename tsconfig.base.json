@@ -10,10 +10,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -21,14 +18,22 @@
       "@argon/shared-shadcn-components-ui": [
         "libs/shared/shadcn-components-ui/src/index.ts"
       ],
-      "@argon/shared-shadcn-utils-ui": [
-        "libs/shared/shadcn-utils-ui/src/index.ts"
-      ],
       "@argon/shared-shadcn-components-ui/*": [
         "libs/shared/shadcn-components-ui/src/*"
       ],
-      "@argon/shared-shadcn-utils-ui/*": [
-        "libs/shared/shadcn-utils-ui/src/*"
+      "@argon/shared-shadcn-utils-ui": [
+        "libs/shared/shadcn-utils-ui/src/index.ts"
+      ],
+      "@argon/shared-shadcn-utils-ui/*": ["libs/shared/shadcn-utils-ui/src/*"],
+      "@argon/shell-auth-feature": ["libs/shell/auth-feature/src/index.ts"],
+      "@argon/shell-auth-feature/server": [
+        "libs/shell/auth-feature/src/server.ts"
+      ],
+      "@argon/shell-login-form-feature": [
+        "libs/shell/login-form-feature/src/index.ts"
+      ],
+      "@argon/shell-login-form-feature/server": [
+        "libs/shell/login-form-feature/src/server.ts"
       ],
       "@argon/shell-prisma-shell-utils": [
         "libs/shell/prisma-shell-utils/src/index.ts"
@@ -41,11 +46,8 @@
       ],
       "@argon/users-user-list-feature": [
         "libs/users/user-list-feature/src/index.ts"
-      ],
+      ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
