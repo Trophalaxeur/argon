@@ -25,6 +25,12 @@
         "libs/shared/shadcn-utils-ui/src/index.ts"
       ],
       "@argon/shared-shadcn-utils-ui/*": ["libs/shared/shadcn-utils-ui/src/*"],
+      "@argon/shell-auth-data-access": [
+        "libs/shell/auth-data-access/src/index.ts"
+      ],
+      "@argon/shell-auth-data-access/server": [
+        "libs/shell/auth-data-access/src/server.ts"
+      ],
       "@argon/shell-auth-feature": ["libs/shell/auth-feature/src/index.ts"],
       "@argon/shell-auth-feature/server": [
         "libs/shell/auth-feature/src/server.ts"

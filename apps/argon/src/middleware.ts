@@ -1,8 +1,8 @@
 import {
-  ArgonNextAuth,
+  ArgonNextAuthWithoutPrisma,
 } from '@argon/shell-auth-feature';
 
-export default ArgonNextAuth.auth;
+export default ArgonNextAuthWithoutPrisma.auth;
 
 export const config = {
   matcher: [

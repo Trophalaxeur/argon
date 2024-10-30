@@ -1,10 +1,13 @@
 
 model User {
-  id                    Int            @id @default(autoincrement())
-  email                 String?        @unique(map: "UNIQ_8D93D649E7927C74") @db.VarChar(180)
-  firstName             String?        @map("first_name") @db.VarChar(100)
-  lastName              String?        @map("last_name") @db.VarChar(100)
-  createdAt             DateTime?      @map("created_at") @db.DateTime(0) @default(now())
-  updatedAt             DateTime?      @map("updated_at") @db.DateTime(0) @updatedAt
-  active                Boolean        @default(true)
+  id                    String         @id @default(cuid())
+  name          String?
+  username      String?         @unique
+  email         String?         @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

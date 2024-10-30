@@ -1,3 +1,5 @@
+import { prisma } from '@argon/shell-prisma-shell-utils';
+import { PrismaAdapter } from '@auth/prisma-adapter';
 import type { NextAuthConfig } from 'next-auth';
 import GitHub from 'next-auth/providers/github';
 import Google from 'next-auth/providers/google';
@@ -23,6 +25,12 @@ export const authConfig = {
     },
   },
   providers: [GitHub, Google], // Add providers with an empty array for now
+} satisfies NextAuthConfig;
+
+export const authConfigWithPrisma = {
+  adapter: PrismaAdapter(prisma),
+  session: { strategy: "jwt" },
+  ...authConfig,
 } satisfies NextAuthConfig;
 
 export const AUTH_PROVIDER_LIST = authConfig.providers.map((provider) => {

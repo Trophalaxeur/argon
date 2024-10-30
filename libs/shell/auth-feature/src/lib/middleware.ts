@@ -1,7 +1,8 @@
 import NextAuth from 'next-auth';
-import { authConfig } from './auth.config';
+import { authConfig, authConfigWithPrisma } from './auth.config';
 
-export const ArgonNextAuth = NextAuth(authConfig);
+export const ArgonNextAuth = NextAuth(authConfigWithPrisma);
+export const ArgonNextAuthWithoutPrisma = NextAuth(authConfig);
 
 export const argonMiddlewareConfig = {
   matcher: [
