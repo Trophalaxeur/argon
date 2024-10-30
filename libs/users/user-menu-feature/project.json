@@ -1,0 +1,9 @@
+{
+  "name": "user-menu-feature",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/users/user-menu-feature/src",
+  "projectType": "library",
+  "tags": ["app:argon", "scope:users", "type:feature"],
+  "// targets": "to see all targets run: nx show project user-menu-feature --web",
+  "targets": {}
+}

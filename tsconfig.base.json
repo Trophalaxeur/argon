@@ -46,6 +46,12 @@
       ],
       "@argon/users-user-list-feature": [
         "libs/users/user-list-feature/src/index.ts"
+      ],
+      "@argon/users-user-menu-feature": [
+        "libs/users/user-menu-feature/src/index.ts"
+      ],
+      "@argon/users-user-menu-feature/server": [
+        "libs/users/user-menu-feature/src/server.ts"
       ]
     }
   },

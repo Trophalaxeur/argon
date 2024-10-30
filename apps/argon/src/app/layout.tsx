@@ -14,6 +14,7 @@ import {
 } from '@argon/shared-shadcn-components-ui';
 
 import { SidebarFeature } from '@argon/shell/sidebar-feature';
+import { UserMenuFeature } from '@argon/users-user-menu-feature';
 
 export const metadata = {
   title: 'Welcome to argon',
@@ -32,14 +33,14 @@ export default function RootLayout({
           <SidebarFeature />
           <SidebarInset>
             <header className="flex h-16 shrink-0 items-center gap-2 border-b">
-              <div className="flex items-center gap-2 px-3">
+              <div className="grid-cols-4 flex flex-1 items-center gap-2 px-3">
                 <SidebarTrigger />
                 <Separator orientation="vertical" className="mr-2 h-4" />
-                <Breadcrumb>
+                <Breadcrumb className="flex w-full">
                   <BreadcrumbList>
                     <BreadcrumbItem className="hidden md:block">
                       <BreadcrumbLink href="#">
-                        Building Your Application
+                        Home
                       </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className="hidden md:block" />
@@ -48,6 +49,7 @@ export default function RootLayout({
                     </BreadcrumbItem>
                   </BreadcrumbList>
                 </Breadcrumb>
+              <UserMenuFeature />
               </div>
             </header>
             <div className="flex flex-1 flex-col gap-4 p-4">

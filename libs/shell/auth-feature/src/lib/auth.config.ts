@@ -2,18 +2,23 @@ import type { NextAuthConfig } from 'next-auth';
 import GitHub from 'next-auth/providers/github';
 import Google from 'next-auth/providers/google';
 
+const LOGIN_PAGE = '/login';
+const HOME_PAGE = '/';
+
 export const authConfig = {
   debug: true,
   pages: {
-    signIn: '/login',
+    signIn: LOGIN_PAGE,
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
+      const callback = nextUrl.searchParams.get('callbackUrl') || undefined;
       const isLoggedIn = !!auth?.user;
-      // const isOnLoginPage = nextUrl.pathname.startsWith('/login');
-      // if (isLoggedIn && isOnLoginPage) {
-      //   return Response.redirect(new URL('/', nextUrl));
-      // }
+      console.log('callback', isLoggedIn, callback);
+      const isOnLoginPage = nextUrl.pathname.startsWith(LOGIN_PAGE);
+      if (isLoggedIn && isOnLoginPage) {
+        return Response.redirect(new URL(HOME_PAGE, callback));
+      }
       return isLoggedIn;
     },
   },
