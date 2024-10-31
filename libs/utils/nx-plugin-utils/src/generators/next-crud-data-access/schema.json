@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "NextCrudDataAccess",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the library.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?",
+      "pattern": "^[a-zA-Z].*$",
+      "x-priority": "important"
+    },
+    "app": {
+      "type": "string",
+      "description": "The application that will consume the library ?",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": {
+        "message": "The application that will consume the library ?",
+        "type": "list",
+        "items": [
+          {
+            "value": "argon",
+            "label": "Argon"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
+        ]
+      },
+      "pattern": "^[a-zA-Z].*$",
+      "x-priority": "important"
+    },
+    "type": {
+      "type": "string",
+      "description": "What type of library is it ?",
+      "$default": {
+        "$source": "argv",
+        "index": 3
+      },
+      "x-prompt": {
+        "message": "What type of library is it?",
+        "type": "list",
+        "items": [
+          {
+            "value": "data-access",
+            "label": "Data Access (lib that retrieve data from backend, db, store, storage, etc.)"
+          },
+          {
+            "value": "feature",
+            "label": "Feature (lib containing a feature, a page, a smart component, etc.)"
+          },
+          {
+            "value": "domain",
+            "label": "Domain (shared typescript definition, constants)"
+          },
+          {
+            "value": "ui",
+            "label": "Dumb components"
+          },
+          {
+            "value": "utils",
+            "label": "Utils (utils are cross application and scope)"
+          }
+        ]
+      }
+    },
+    "scope": {
+      "type": "string",
+      "description": "What is the scope for library? (if you cannot find the one you want in this list, you can create a new one)",
+      "$default": {
+        "$source": "argv",
+        "index": 2
+      },
+      "x-prompt": {
+        "message": "What is the scope for library? (if you cannot find the one you want in this list, you can create a new one)",
+        "type": "list",
+        "items": [
+          { "value": "shared", "label": "Shared" },
+          { "value": "shell", "label": "Shell" },
+          { "value": "ui", "label": "UI" },
+          { "value": "admin", "label": "Admin" },
+          { "value": "utils", "label": "Utils" },
+          { "value": "users", "label": "Users" }
+        ]
+      }
+    }
+  },
+  "required": ["app", "type", "name", "scope"]
+}

@@ -1,0 +1,13 @@
+// You can use Copilot here to help you generate the schema
+// Example :
+// Generate a prisma model Person with a field name of type String and a field age of type Int
+
+// Use pnpm generate-client to generate the typescript client
+// Use pnpm generate-schema to generate the database
+
+
+model <%= className %> {
+  id                    String         @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

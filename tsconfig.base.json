@@ -58,6 +58,9 @@
       ],
       "@argon/users-user-menu-feature/server": [
         "libs/users/user-menu-feature/src/server.ts"
+      ],
+      "@argon/utils-nx-plugin-utils": [
+        "libs/utils/nx-plugin-utils/src/index.ts"
       ]
     }
   },

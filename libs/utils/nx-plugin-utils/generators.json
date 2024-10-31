@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "next-crud-data-access": {
+      "factory": "./src/generators/next-crud-data-access/generator",
+      "schema": "./src/generators/next-crud-data-access/schema.json",
+      "description": "next-crud-data-access"
+    }
+  }
+}
