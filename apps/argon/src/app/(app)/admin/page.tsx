@@ -14,10 +14,10 @@ export default function Index() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Welcome to ARGON</CardTitle>
+        <CardTitle>Administration</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Your personal development companion</p>
+        <p>Administration system</p>
       </CardContent>
     </Card>
   );

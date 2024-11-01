@@ -1,5 +1,5 @@
 import { Header } from '@argon/ui-header-ui';
-import { Navbar } from '@argon/ui-navbar-ui';
+import { NavbarAdmin } from '@argon/ui-navbar-ui';
 
 export const metadata = {
   title: 'Welcome to argon',
@@ -13,8 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <Header />
-      <Navbar />
+      <NavbarAdmin />
       <main>{children}</main>
     </>
   );

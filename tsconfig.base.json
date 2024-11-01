@@ -47,6 +47,10 @@
       "@argon/shell/sidebar-feature": [
         "libs/shell/sidebar-feature/src/index.ts"
       ],
+      "@argon/ui-header-ui": ["libs/ui/header-ui/src/index.ts"],
+      "@argon/ui-header-ui/server": ["libs/ui/header-ui/src/server.ts"],
+      "@argon/ui-navbar-ui": ["libs/ui/navbar-ui/src/index.ts"],
+      "@argon/ui-navbar-ui/server": ["libs/ui/navbar-ui/src/server.ts"],
       "@argon/users-user-data-access": [
         "libs/users/user-data-access/src/index.ts"
       ],

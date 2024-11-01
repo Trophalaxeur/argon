@@ -12,7 +12,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body>{children}</body>
+      <body>
+        <div className="min-h-screen bg-background">
+          <div className="mx-auto max-w-[1366px] px-4">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

@@ -9,10 +9,10 @@ export default function Page() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Skills</CardTitle>
+        <CardTitle>Character</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Your skills and abilities</p>
+        <p>Your character</p>
       </CardContent>
     </Card>
   );
