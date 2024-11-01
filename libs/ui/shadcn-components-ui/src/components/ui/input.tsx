@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { cn } from '@argon/shared-shadcn-utils-ui';
+import { cn } from '@argon/ui-shadcn-utils';
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}

@@ -4,14 +4,14 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
-    "config": "libs/shared/shadcn-utils-ui/src/tailwind/tailwind.config.js",
-    "css": "libs/shared/shadcn-utils-ui/src/styles/global.css",
+    "config": "libs/ui/shadcn-utils/src/tailwind/tailwind.config.js",
+    "css": "libs/ui/shadcn-utils/src/styles/global.css",
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
-    "components": "@argon/shared-shadcn-components-ui/components",
-    "utils": "@argon/shared-shadcn-utils-ui"
+    "components": "@argon/ui-shadcn-components-ui/components",
+    "utils": "@argon/ui-shadcn-utils"
   }
 }

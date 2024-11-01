@@ -1,11 +1,10 @@
 'use client';
 
-import { Button } from '@argon/shared-shadcn-components-ui';
-import { cn } from '@argon/shared-shadcn-utils-ui';
+import { Button } from '@argon/ui-shadcn-components-ui';
+import { cn } from '@argon/ui-shadcn-utils';
 import { Calendar, Lightbulb, Settings, ShieldCheck, User } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
 
 const MENU_ITEMS = [
   {
@@ -56,7 +55,7 @@ export function Navbar({ className }: NavbarProps) {
                 'w-20 h-20 flex flex-col items-center justify-center gap-2 rounded-full border-4 transition-colors',
                 pathname.startsWith(link)
                   ? 'bg-primary border-primary hover:bg-primary/90'
-                  : 'bg-background border-secondary hover:bg-primary/90',
+                  : 'bg-background border-secondary hover:bg-primary/90'
               )}
               title={name}
             >

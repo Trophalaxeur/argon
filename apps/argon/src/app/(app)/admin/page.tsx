@@ -2,8 +2,8 @@ import {
   Card,
   CardContent,
   CardHeader,
-  CardTitle
-} from '@argon/shared-shadcn-components-ui';
+  CardTitle,
+} from '@argon/ui-shadcn-components-ui';
 
 export default function Index() {
   /*

@@ -10,28 +10,29 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@argon/shared-shadcn-components-ui": [
-        "libs/shared/shadcn-components-ui/src/index.ts"
+      "@argon/ui-shadcn-components-ui/*": [
+        "libs/ui/shadcn-components-ui/src/*"
       ],
-      "@argon/shared-shadcn-components-ui/*": [
-        "libs/shared/shadcn-components-ui/src/*"
+      "@argon/ui-shadcn-utils/*": [
+        "libs/ui/shadcn-utils/src/*"
       ],
-      "@argon/shared-shadcn-utils-ui": [
-        "libs/shared/shadcn-utils-ui/src/index.ts"
-      ],
-      "@argon/shared-shadcn-utils-ui/*": ["libs/shared/shadcn-utils-ui/src/*"],
       "@argon/shell-auth-data-access": [
         "libs/shell/auth-data-access/src/index.ts"
       ],
       "@argon/shell-auth-data-access/server": [
         "libs/shell/auth-data-access/src/server.ts"
       ],
-      "@argon/shell-auth-feature": ["libs/shell/auth-feature/src/index.ts"],
+      "@argon/shell-auth-feature": [
+        "libs/shell/auth-feature/src/index.ts"
+      ],
       "@argon/shell-auth-feature/server": [
         "libs/shell/auth-feature/src/server.ts"
       ],
@@ -47,10 +48,24 @@
       "@argon/shell/sidebar-feature": [
         "libs/shell/sidebar-feature/src/index.ts"
       ],
-      "@argon/ui-header-ui": ["libs/ui/header-ui/src/index.ts"],
-      "@argon/ui-header-ui/server": ["libs/ui/header-ui/src/server.ts"],
-      "@argon/ui-navbar-ui": ["libs/ui/navbar-ui/src/index.ts"],
-      "@argon/ui-navbar-ui/server": ["libs/ui/navbar-ui/src/server.ts"],
+      "@argon/ui-header-ui": [
+        "libs/ui/header-ui/src/index.ts"
+      ],
+      "@argon/ui-header-ui/server": [
+        "libs/ui/header-ui/src/server.ts"
+      ],
+      "@argon/ui-navbar-ui": [
+        "libs/ui/navbar-ui/src/index.ts"
+      ],
+      "@argon/ui-navbar-ui/server": [
+        "libs/ui/navbar-ui/src/server.ts"
+      ],
+      "@argon/ui-shadcn-components-ui": [
+        "libs/ui/shadcn-components-ui/src/index.ts"
+      ],
+      "@argon/ui-shadcn-utils": [
+        "libs/ui/shadcn-utils/src/index.ts"
+      ],
       "@argon/users-user-data-access": [
         "libs/users/user-data-access/src/index.ts"
       ],
@@ -68,5 +83,8 @@
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

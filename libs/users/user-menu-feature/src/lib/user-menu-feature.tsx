@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
   SidebarMenuButton,
-} from '@argon/shared-shadcn-components-ui';
+} from '@argon/ui-shadcn-components-ui';
 import { Bell, ChevronsUpDown, Settings } from 'lucide-react';
 import UserMenuSettingsButtonFeature from './user-menu-settings-button';
 import { ArgonNextAuth } from '@argon/shell-auth-feature';

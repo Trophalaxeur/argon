@@ -6,7 +6,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@argon/shared-shadcn-components-ui';
+} from '@argon/ui-shadcn-components-ui';
 import { fetchUsers } from '@argon/users-user-data-access';
 
 const FAKE_USERS = [

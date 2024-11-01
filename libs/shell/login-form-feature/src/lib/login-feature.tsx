@@ -2,14 +2,13 @@
 
 import * as React from 'react';
 
-import { Button } from '@argon/shared-shadcn-components-ui';
+import { Button } from '@argon/ui-shadcn-components-ui';
 import { Loader } from 'lucide-react';
-import { cn } from '@argon/shared-shadcn-utils-ui';
+import { cn } from '@argon/ui-shadcn-utils';
 import Image from 'next/image';
 import googleIcon from '../icons/google.svg';
 import githubIcon from '../icons/github.svg';
 import { AUTH_PROVIDER_LIST, signIn } from '@argon/shell-auth-feature';
-
 
 type LoginFormFeatureProps = React.HTMLAttributes<HTMLDivElement>;
 

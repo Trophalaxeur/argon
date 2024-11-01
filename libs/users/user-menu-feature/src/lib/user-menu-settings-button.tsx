@@ -1,6 +1,6 @@
 'use client';
 
-import { DropdownMenuItem } from '@argon/shared-shadcn-components-ui';
+import { DropdownMenuItem } from '@argon/ui-shadcn-components-ui';
 import { signOut } from '@argon/shell-auth-feature';
 import { LogOut } from 'lucide-react';
 

@@ -8,11 +8,11 @@ module.exports = {
   content: [
     join(
       __dirname,
-      '../../../../../apps/argon/{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}',
+      '../../../../../apps/argon/{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'
     ),
     join(__dirname, '../../../../**/*!(*.stories|*.spec).{ts,tsx,html}'),
     ...createGlobPatternsForDependencies(
-      join(__dirname, '../../../../../apps/argon'),
+      join(__dirname, '../../../../../apps/argon')
     ),
   ],
   theme: {

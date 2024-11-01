@@ -9,7 +9,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@argon/shared-shadcn-components-ui';
+} from '@argon/ui-shadcn-components-ui';
 import { BookUser, Home, PersonStanding, Settings, User2 } from 'lucide-react';
 
 // Menu items.

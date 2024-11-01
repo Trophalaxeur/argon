@@ -3,7 +3,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from '@argon/shared-shadcn-components-ui';
+} from '@argon/ui-shadcn-components-ui';
 
 export default function Page() {
   return (

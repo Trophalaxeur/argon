@@ -1,6 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@argon/shared-shadcn-components-ui';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@argon/ui-shadcn-components-ui';
 import { UserList } from '@argon/users-user-list-feature';
-
 
 export default function Page() {
   return (

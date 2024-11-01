@@ -1,4 +1,4 @@
-import { cn } from '@argon/shared-shadcn-utils-ui';
+import { cn } from '@argon/ui-shadcn-utils';
 
 function Skeleton({
   className,
